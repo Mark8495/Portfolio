@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-family: inherit;
+}
+
+header{
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+section{
+    min-height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 3rem 18rem;
+}
+
+.section{
+    transform: translateY(-100%);
+    transition: all .5s ease-in-out;
+    background-color: grey;
+}
+
+.sec1{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec2{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec3{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec4{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+.sec5{
+    display: none;
+    transform: translateY(0) scale(1);
+}
+
+
+/* Controls */
+
+.controls{
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    right: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    
+}
+
+.control{
+    padding: 1rem;
+    cursor: pointer;
+    background-color: grey;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .7rem 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);    
+}
+
+i{
+    font-size: 1.2rem;
+    color: white;
+    pointer-events: none;
+}
+
+.active-btn{
+    background-color: green !important;
+    transition: all .5s ease-in-out;
+}
+
