@@ -43,28 +43,46 @@ section{
 .sec1{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: blanchedalmond;
 }
 
 .sec2{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: slateblue;
 }
 
 .sec3{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: rgb(146,205,90);
 }
 
 .sec4{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: yellow;
 }
 
 .sec5{
     display: none;
     transform: translateY(0) scale(1);
+    background-color: purple;
 }
 
+.active {
+    display: block;
+    animation: appear 1s ease-in-out;
+    transform: translateY(0) scaleY(1);
+  }
+  @keyframes appear {
+    0% {
+      transform: translateY(-100%) scaleY(0);
+    }
+    100% {
+      transform: translateY(0) scaleY(1);
+    }
+  }
 
 /* Controls */
 
